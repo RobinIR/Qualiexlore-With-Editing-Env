@@ -23,6 +23,13 @@ For Docker use this image from dockerhub : robinkuri/quali-json-server
 * Dockerhub Link : https://hub.docker.com/repository/docker/robinkuri/quali-json-server
 
 
+## Important Notes
+
+This App now need to backend server json-server and graphql server.
+
+* Editable Filters and Editable Factors data fetch from json-server and data are stored in db.json file
+* Static Filters and Factors data fetch from graphql server
+
 ## Contact
 
 * [Shantanoo Desai](mailto:des@biba.uni-bremen.de)
