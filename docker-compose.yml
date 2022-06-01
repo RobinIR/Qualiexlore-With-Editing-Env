@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+
+  qualiexplore:
+    ports:
+      - 80:80
+    
+    image: robinkuri/qualiexpolire-with-editing-environment:latest
+
+  json-server:
+    ports:
+      - 3000:3000
+    image: robinkuri/quali-json-server:latest
+  
+  gql-mongo:
+    ports:
+      - "5000:5000"
+
+    env_file:
+      - .env
+
+    image: hrabhijith/gql-mongo:quali
