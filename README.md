@@ -18,6 +18,9 @@ A mock json-server backend is used to build this project. This backend is used f
 Run `npm install -g json-server` to install json server on the system
 Run `json-server --watch db.json` to run json server
 
+For Docker use this image from dockerhub : robinkuri/quali-json-server 
+Dockerhub Link : https://hub.docker.com/repository/docker/robinkuri/quali-json-server
+
 
 ## Contact
 
@@ -28,7 +31,9 @@ Run `json-server --watch db.json` to run json server
 ## Docker
 
 QualiExplore is served through `nginx` HTTP Server. See `Dockerfile` for details.
-Qualiexplore is also available on [Docker Hub](https://hub.docker.com/repository/docker/shantanoodesai/qualiexplore)
+Qualiexplore is also available on [Docker Hub]
+1. https://hub.docker.com/repository/docker/shantanoodesai/qualiexplore
+2. https://hub.docker.com/repository/docker/robinkuri/qualiexpolire-with-editing-environment
 
 ### Local Development
 
@@ -46,37 +51,7 @@ __Run Image__:
 
 __Local Development Using `docker-compose`__:
 
-```yml
-version: '3.1'
-
-services:
-  qualiexplore:
-    image: 'qualiexplore'
-    build: '.'
-    ports:
-      - 3000:80
-```
-
-### Deployment
-
-1. Within `docker-compose.yml` add:
-
-  ```yml
-  version: '3.1'
-
-  services:
-    qualiexplore:
-      image: 'shantanoodesai/qualiexplore'
-      ports:
-        - 3000:80
-  ```
-
-2. Run using `docker` command:
-  ```bash
-    docker run -p 3000:80 --rm shantanoodesai/qualiexplore
-  ```
-
-
+See Dockerfile and docker-compose.yml file
 
 ## License
 
