@@ -19,7 +19,8 @@ Run `npm install -g json-server` to install json server on the system
 Run `json-server --watch db.json` to run json server
 
 For Docker use this image from dockerhub : robinkuri/quali-json-server 
-Dockerhub Link : https://hub.docker.com/repository/docker/robinkuri/quali-json-server
+
+* Dockerhub Link : https://hub.docker.com/repository/docker/robinkuri/quali-json-server
 
 
 ## Contact
