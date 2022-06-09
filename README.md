@@ -15,8 +15,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## JSON-Server
 A mock json-server backend is used to build this project. This backend is used for CRUD operations on Filters page and generate editable tree for Factors data. Data are stored in `db.json` file. Rest of the things are handeled by GraphQl server.
 
-Run `npm install -g json-server` to install json server on the system
-Run `json-server --watch db.json` to run json server
+For local setup:
+
+Run `npm install -g json-server`  --to install json server on the system
+Run `json-server --watch db.json` --to run json server
 
 For Docker use this image from dockerhub : robinkuri/quali-json-server 
 
